@@ -28,34 +28,11 @@ data = \
 #
 #%% visualize
 #
-bar_items = ['value',
-             'params_gamma',
-             'params_learning_rate',
-             'params_max_depth',
-             'params_min_child_weight',
-             'params_n_iters',
-             'params_reg_alpha', 
-             'params_reg_lambda',
-             'params_subsample']
-bar_labels = ['value',
-              'complexity',
-              'learning_rate',
-              'tree depth',
-              'min_child_wt',
-              'iterations',
-              'reg_alpha',
-              'reg_lambda',
-              'subsample']
+bar_items = [<list of strings that are column names of data>]
+bar_labels = [<list of strings you want to use in place of column names>]
 fig = plot_experiments('test plot experiments',
                        data,
                        893,
-                       1628,
-                       bar_items,
-                       bar_labels)
-
-fig = plot_experiments('test plot experiments',
-                       data,
-                       1628,
                        1628,
                        bar_items,
                        bar_labels)
